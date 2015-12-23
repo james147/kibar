@@ -35,7 +35,7 @@ sudo mkfs.ext4 -F "${rootdev}" >/dev/null
 [ ! -d "${mount}" ] && mkdir "${mount}"
 
 sudo mount "${rootdev}" "${mount}"
-sudo mkdir "${mount}/boot"
+sudo mkdir -p "${mount}/boot"
 sudo mount "${bootdev}" "${mount}/boot"
 
 sudo bsdtar -xpf ArchLinuxARM-rpi-latest.tar.gz -C ${mount}
