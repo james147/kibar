@@ -1,0 +1,9 @@
+[package]
+name = "img"
+version = "0.1.0"
+authors = ["Michael Daffin <michael@daffin.io>"]
+
+[dependencies]
+docopt = "0.6"
+rustc-serialize = "0.3"
+glob = "0.2.10"
